@@ -1,0 +1,92 @@
+<!--
+    Name: Shreya Kannepalli
+    Date: 09/06/25
+    This is my calculator.html that holds on all of the webpage's content.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shreya's Color Contraster</title>
+        <!--Icon Image found on:
+        https://upload.wikimedia.org/wikipedia/commons/b/bb/Linear_RGB_color_wheel.png-->
+        <link rel="icon" type="image/jpg" href="colorwheel.jpg">
+        <script src="calculator.js"></script>
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+                    <nav>
+                        <ul class="nav-bar">
+                            <li><a class="tab" href="calculator.html">Home</a></li>
+                            <li><a class = "tab" href="historyCalc.html">History</a></li>
+                            <li><a class="tab" href="aboutCalc.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            <h1>Let's Contrast Some Colors!</h1>
+            <p id="description2">
+                Enter two colors to see if they work well together.
+                Based on the contrast value, you can see if you need to change the colors to improve
+                readability and accessibility.
+            </p>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div id="color1">
+                    </div>
+                    <div id="input">
+                        <h2>Enter Color #1:</h2>
+                        <label for="input1">Choose color:</label>
+                        <input type="color" id="input1">
+                        <br><br><br>
+                        <button id="lock1">Lock in color</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="color2">
+                    </div>
+                    <div id="input-next">
+                        <h2>Enter Color #2:</h2>
+                        <label for="input2">Choose color:</label>
+                        <input type="color" id="input2">
+                        <br><br><br>
+                        <button id="lock2">Lock in color</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contrast-display">
+                <p id="display-text">Here is display text.</p>
+                <button id="switch-button">Switch colors!</button>
+            </div>
+
+            <br><br><br><br>
+            <div id="button-container">
+                <button id="color-check">Check Contrast!</button>
+            </div>
+
+            <div id="result">
+                <p id="contrast-value"></p>
+            </div>
+
+            <div id="result-text">
+                <p id="contrast-text"></p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="copyright-contain">
+                <!-- Learned to get the copyright symbol before Bridge -->
+                <p id="copyright">&#169; 2025 Shreya Kannepalli. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
